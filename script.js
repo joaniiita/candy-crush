@@ -31,7 +31,7 @@ function startGame(){
         for (let c = 0; c < columns; c++) {
             let tile = document.createElement('img');
             tile.id = r.toString() + '-' + c.toString();
-            tile.src = '/images/' + randomCandy() + '.png';
+            tile.src = './images/' + randomCandy() + '.png';
 
             // Drag functionality
             tile.addEventListener('dragstart', dragStart); // Click on a candy, initialize drag process
